@@ -1,8 +1,8 @@
 public class Laptop {
-    private IntelProcessor intelProcessor;
-    private DDR3Ram ddr3Ram;
+    private Processor intelProcessor;
+    private Ram ddr3Ram;
 
-    public Laptop(IntelProcessor intelProcessor, DDR3Ram ddr3Ram){
+    public Laptop(Processor intelProcessor, Ram ddr3Ram){
         this.intelProcessor = intelProcessor;
         this.ddr3Ram = ddr3Ram;
     }

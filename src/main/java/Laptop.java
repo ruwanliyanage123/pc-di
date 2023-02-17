@@ -6,6 +6,10 @@ public class Laptop {
     @Inject
     private Ram ddr3Ram;
 
+    public Laptop(){
+        System.out.println("Laptop started...");
+    }
+
     public void start(){
         System.out.println("Laptop properties: processor-"+intelProcessor +"and ram-"+ddr3Ram);
     }

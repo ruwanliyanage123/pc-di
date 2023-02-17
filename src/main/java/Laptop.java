@@ -1,13 +1,16 @@
 import com.google.inject.Inject;
 
+import javax.inject.Named;
+
 public class Laptop {
-    @Inject
     private Processor intelProcessor;
-    @Inject
+
     private Ram ddr3Ram;
 
-    public Laptop(){
-        System.out.println("Laptop started...");
+    @Inject
+    public Laptop(@Named("amd") Processor processor, Ram ddr3Ram){
+        this.intelProcessor = processor;
+        this.ddr3Ram = ddr3Ram;
     }
 
     public void start(){

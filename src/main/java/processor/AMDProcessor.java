@@ -1,4 +1,6 @@
-public class AMDProcessor implements Processor{
+package processor;
+
+public class AMDProcessor implements Processor {
     public AMDProcessor(){
         System.out.println("AMD Processor connected...");
     }

@@ -1,4 +1,6 @@
-public class IntelProcessor implements Processor{
+package processor;
+
+public class IntelProcessor implements Processor {
     public IntelProcessor(){
         System.out.println("Intel Processor connected...");
     }

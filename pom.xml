@@ -6,11 +6,4 @@
   <version>1.0-SNAPSHOT</version>
   <name>Archetype - pv-di-v1</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>com.google.inject</groupId>
-      <artifactId>guice</artifactId>
-      <version>5.0.0</version>
-    </dependency>
-  </dependencies>
 </project>

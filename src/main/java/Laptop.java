@@ -1,8 +1,13 @@
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import processor.Processor;
 import ram.Ram;
 
+@Component
 public class Laptop {
+    @Autowired
     private Processor intelProcessor;
+    @Autowired
     private Ram ddr3Ram;
 
     public Laptop(Processor intelProcessor, Ram ddr3Ram) {

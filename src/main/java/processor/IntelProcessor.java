@@ -5,7 +5,6 @@ public class IntelProcessor implements Processor {
         System.out.println("Intel Processor connected...");
     }
 
-
     public void running() {
         System.out.println("Intel Processor running...");
     }

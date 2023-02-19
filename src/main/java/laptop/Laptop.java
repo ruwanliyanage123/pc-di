@@ -5,15 +5,15 @@ import ram.Ram;
 
 public class Laptop {
 
-    private final Processor intelProcessor;
-    private final Ram ddr3Ram;
+    private final Processor processor;
+    private final Ram ram;
 
-    public Laptop(Processor intelProcessor, Ram ddr3Ram) {
-        this.intelProcessor = intelProcessor;
-        this.ddr3Ram = ddr3Ram;
+    public Laptop(Processor processor, Ram ram) {
+        this.processor = processor;
+        this.ram = ram;
     }
 
     public void start(){
-        System.out.println("Laptop properties: processor-"+intelProcessor +"and ram-"+ddr3Ram);
+        System.out.println("Laptop properties: processor-"+processor +"and ram-"+ram);
     }
 }

@@ -1,20 +1,18 @@
 package laptop;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import processor.Processor;
 import ram.Ram;
 
-import javax.annotation.Resource;
-
 @Component
 public class Laptop {
+
     @Autowired
-    @Qualifier("processor.IntelProcessor")
+    @IntelProcessor
     private Processor intelProcessor;
     @Autowired
-    @Qualifier("ram.DDR3Ram")
+    @DDR3Ram
     private Ram ddr3Ram;
 
     public void start(){

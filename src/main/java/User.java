@@ -1,4 +1,3 @@
-import config.AppConfig;
 import laptop.Laptop;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

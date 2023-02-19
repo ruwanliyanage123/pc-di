@@ -1,15 +1,16 @@
 package laptop;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import processor.Processor;
 import ram.Ram;
 
+import javax.annotation.Resource;
+
 @Component
 public class Laptop {
-    @Autowired
+    @Resource(name = "processor.IntelProcessor")
     private Processor intelProcessor;
-    @Autowired
+    @Resource(name = "ram.DDR3Ram")
     private Ram ddr3Ram;
 
     public void start(){

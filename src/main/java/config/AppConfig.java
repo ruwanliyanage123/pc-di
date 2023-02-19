@@ -12,12 +12,12 @@ import ram.Ram;
 @ComponentScan(basePackages = { "processor", "ram", "laptop" })
 public class AppConfig {
 
-    @Bean
+    @Bean(name = "processor.IntelProcessor")
     public Processor intelProcessor() {
         return new IntelProcessor();
     }
 
-    @Bean
+    @Bean(name = "ram.DDR3Ram")
     public Ram ddr3Ram() {
         return new DDR3Ram();
     }

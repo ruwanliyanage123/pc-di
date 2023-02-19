@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="processor.IntelProcessor" class="processor.IntelProcessor" />
+    <bean id="ram.DDR3Ram" class="ram.DDR3Ram" />
+    <bean id="processor.AMDProcessor" class="processor.AMDProcessor"/>
+    <bean id="ram.DDR4Ram" class="ram.DDR4Ram"/>
+    <bean id="laptop" class="laptop.Laptop">
+        <constructor-arg ref="processor.IntelProcessor" />
+        <constructor-arg ref="ram.DDR4Ram" />
+    </bean>
+</beans>

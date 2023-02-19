@@ -9,7 +9,7 @@ import ram.DDR3Ram;
 import ram.Ram;
 
 @Configuration
-@ComponentScan(basePackages = { "processor", "ram" })
+@ComponentScan(basePackages = { "processor", "ram", "laptop" })
 public class AppConfig {
 
     @Bean

@@ -7,7 +7,9 @@ public class Laptop {
 
     private final Processor processor;
     private final Ram ram;
-
+    
+    
+    //spring-cofig.xml will handle the dependencies
     public Laptop(Processor processor, Ram ram) {
         this.processor = processor;
         this.ram = ram;

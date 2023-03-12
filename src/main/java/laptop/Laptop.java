@@ -8,6 +8,7 @@ import ram.Ram;
 
 import javax.annotation.PostConstruct;
 
+
 @Component
 public class Laptop {
     @Autowired
@@ -24,6 +25,7 @@ public class Laptop {
         System.out.println("brand  :"+this.ram.getBrand());
         System.out.println("speed  :"+this.ram.getClockSpeed());
     }
+    
     @Autowired
     @PostConstruct
     @DependsOn({"processor", "displayRamReport"})

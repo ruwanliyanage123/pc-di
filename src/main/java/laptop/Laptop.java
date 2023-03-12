@@ -12,13 +12,14 @@ public class Laptop {
     @Autowired
     public Processor processor;
 
+    @Autowired
     public void displayRamReport(){
         System.out.println("----RAM------");
         System.out.println("storage:"+this.ram.getStorage());
         System.out.println("brand  :"+this.ram.getBrand());
         System.out.println("speed  :"+this.ram.getClockSpeed());
     }
-
+    @Autowired
     public void displayProcessorReport(){
         System.out.println("----Processor------");
         System.out.println("storage:"+this.processor.getBrand());

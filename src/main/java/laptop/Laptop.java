@@ -1,9 +1,12 @@
 package laptop;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Component;
 import processor.Processor;
 import ram.Ram;
+
+import javax.annotation.PostConstruct;
 
 @Component
 public class Laptop {
@@ -13,6 +16,8 @@ public class Laptop {
     public Processor processor;
 
     @Autowired
+    @PostConstruct
+    @DependsOn({"ram"})
     public void displayRamReport(){
         System.out.println("----RAM------");
         System.out.println("storage:"+this.ram.getStorage());
@@ -20,6 +25,8 @@ public class Laptop {
         System.out.println("speed  :"+this.ram.getClockSpeed());
     }
     @Autowired
+    @PostConstruct
+    @DependsOn({"processor", "displayRamReport"})
     public void displayProcessorReport(){
         System.out.println("----Processor------");
         System.out.println("storage:"+this.processor.getBrand());

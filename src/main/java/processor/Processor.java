@@ -1,8 +1,14 @@
 package processor;
 
-/**
- * Processor should keep as an interface to use as a common parent for the all kind of Processors
- */
-public interface Processor {
-     void running();
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class Processor {
+    private String brand;
+    private int coreCount;
+    private String clockSpeed;
 }

@@ -1,8 +1,14 @@
 package ram;
 
-/**
- * Ram should keep as an interface to use as a common parent for the all kind of Rams
- */
-public interface Ram {
-    void running();
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class Ram {
+    private String storage;
+    private String brand;
+    private String clockSpeed;
 }

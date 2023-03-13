@@ -10,6 +10,7 @@ For this example project taken a well nown Example.
 
 There is a Laptop class and there are two dependencies 
 
+<h2>Method Injection</h2><br>
 Using method injection, we can invoke the methods automatically without invoking them. We can do it by using @Autowired annotation.
 
     @Autowired

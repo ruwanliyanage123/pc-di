@@ -9,6 +9,9 @@ There are three version releases
 For this example project taken a well nown Example.
 
 There is a Laptop class and there are two dependencies 
+<h2>Method Injection</h2><br>
+Using the setter injection, we can set the dependencies after initialize the object
+
 
 <h2>Method Injection</h2><br>
 Using method injection, we can invoke the methods automatically without invoking them. We can do it by using @Autowired annotation.
